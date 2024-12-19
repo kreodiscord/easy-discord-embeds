@@ -1,0 +1,29 @@
+{
+  "name": "easy-discord-embeds",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kreodiscord",
+  "license": "MIT",
+  "description": "A simple package to easily create and send embeds in Discord bots.",
+  "keywords": [
+    "discord",
+    "embeds",
+    "discord.js",
+    "bot",
+    "easy-embeds"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kreodiscord/easy-discord-embeds.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kreodiscord/easy-discord-embeds/issues"
+  },
+  "homepage": "https://github.com/kreodiscord/easy-discord-embeds#readme",
+  "dependencies": {
+    "discord.js": "^14.16.3"
+  }
+}
