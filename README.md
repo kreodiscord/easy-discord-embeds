@@ -79,6 +79,32 @@ Here’s how you can customize the embeds:
 
 ---
 
+## 🧑‍💻 Example with Advanced Options:
+```javascript
+sendEmbed(message, {
+  title: 'Embed with Advanced Options',
+  description: 'This embed has footer, image, and fields.',
+  color: 0xff5733, // Red color
+  footer: {
+    text: 'Footer Text',
+    iconURL: 'https://example.com/icon.png',
+  },
+  image: 'https://example.com/image.png',
+  thumbnail: 'https://example.com/thumbnail.png',
+  fields: [
+    {
+      name: 'Field 1',
+      value: 'This is a field with some content.',
+      inline: true,
+    },
+  ],
+});
+
+
+```
+
+---
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
