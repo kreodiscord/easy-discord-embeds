@@ -25,7 +25,8 @@ const { sendEmbed } = require('easy-discord-embeds');
 ---
 
 ## Example Usage:
-const { sendEmbed } = require('easy-discord-embeds');
+
+## **const { sendEmbed } = require('easy-discord-embeds');
 
 module.exports = {
   data: {
@@ -54,7 +55,7 @@ module.exports = {
     // Send the embed using the sendEmbed function
     sendEmbed(interaction, embedOptions);
   },
-};
+};**##
 ---
 
 ---
