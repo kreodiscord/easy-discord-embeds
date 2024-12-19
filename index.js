@@ -1,6 +1,7 @@
 const { EmbedBuilder } = require('discord.js');
 
-function sendEmbed(interaction, embedOptions) {
+function sendEmbed(target, embedOptions) {
+  // Create embed object
   const embed = new EmbedBuilder()
     .setTitle(embedOptions.title || 'No Title')
     .setDescription(embedOptions.description || 'No Description')
@@ -29,13 +30,15 @@ function sendEmbed(interaction, embedOptions) {
     });
   }
 
-  // Send the embed to the interaction or message
-  if (interaction.isCommand()) {
-    interaction.reply({ embeds: [embed] });
-  } else if (interaction.isMessage()) {
-    interaction.channel.send({ embeds: [embed] });
+  // Check if the target is a message or interaction and send the embed
+  if (target.isCommand) {
+    // Handle interaction (e.g. slash command)
+    target.reply({ embeds: [embed] });
+  } else if (target instanceof Message) {
+    // Handle message object
+    target.channel.send({ embeds: [embed] });
   } else {
-    console.error('Unsupported interaction type.');
+    console.error('Unsupported target type.');
   }
 }
 
