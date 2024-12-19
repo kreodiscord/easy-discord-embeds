@@ -64,13 +64,16 @@ module.exports = {
 
 ---
 
-## 📝 sendEmbed Function
+## 🎨 Embed Options
+Here’s how you can customize the embeds:
 
-The `sendEmbed` function is used to send the embed to the Discord channel.
-Parameters:
-- interaction: The interaction object (for Slash Commands).
-- message: The message object (for Message Commands).
-- embedOptions: The options for your embed (title, description, fields, color, etc.).
+- title: The title of the embed (string)
+- description: The content of the embed (string)
+- color: The color of the embed (hexadecimal value)
+- footer: Optional footer text (object with text and iconURL properties)
+- image: Optional image URL to display in the embed (string)
+- thumbnail: Optional thumbnail URL (string)
+- fields: Optional fields array, where each field has name, value, and optional inline (boolean)
 
 ---
 
