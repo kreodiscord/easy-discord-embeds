@@ -1,6 +1,6 @@
 # easy-discord-embeds
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Discord](https://img.shields.io/discord/1275486972252786730?label=discord)](https://discord.gg/uwxaPtbdvT)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Discord](https://img.shields.io/discord/1319351109936222260?label=discord)](https://discord.gg/uwxaPtbdvT)
 
 A simple package to easily create and send embeds in Discord bots using `discord.js`. This package abstracts away the need to manually construct embed objects, allowing you to focus on what matters.
 
