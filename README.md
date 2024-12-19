@@ -94,6 +94,18 @@ module.exports = {
 
 ---
 
+## 📝 sendEmbed Function
+
+The `sendEmbed` function is used to send the embed to the Discord channel.
+Parameters:
+- interaction: The interaction object (for Slash Commands).
+- message: The message object (for Message Commands).
+- embedOptions: The options for your embed (title, description, fields, color, etc.).
+
+---
+
+---
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
