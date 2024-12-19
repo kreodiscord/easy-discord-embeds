@@ -32,31 +32,17 @@ const { sendEmbed } = require('easy-discord-embeds');
 module.exports = {
   data: {
     name: 'sendembed',
-    description: 'Sends a simple embed.',
+    description: 'Send an embed.',
   },
   async execute(interaction) {
-    const embedOptions = {
-      title: 'Hello, World!',
-      description: 'This is an easy embed.',
+    sendEmbed(interaction, {
+      title: 'Simple Embed!',
+      description: 'This is a simple description.',
       color: 0x3498db, // Blue color
-      fields: [
-        {
-          name: 'Field 1',
-          value: 'This is the value of field 1.',
-          inline: true,
-        },
-        {
-          name: 'Field 2',
-          value: 'This is the value of field 2.',
-          inline: true,
-        },
-      ],
-    };
-
-    // Send the embed using the sendEmbed function
-    sendEmbed(interaction, embedOptions);
+    });
   },
 };
+
 ```
 ## 🧑‍💻 Example Usage for Message Commands
 Here’s an example of how to use easy-discord-embeds with Message Commands (prefix-based commands) to send an embed:
@@ -65,31 +51,15 @@ const { sendEmbed } = require('easy-discord-embeds');
 
 module.exports = {
   name: 'sendembed',
-  description: 'Sends a simple embed.',
-  execute(message, args) {
-    const embedOptions = {
-      title: 'Hello, World!',
-      description: 'This is an easy embed.',
-      color: 0x3498db, // Blue color
-      fields: [
-        {
-          name: 'Field 1',
-          value: 'This is the value of field 1.',
-          inline: true,
-        },
-        {
-          name: 'Field 2',
-          value: 'This is the value of field 2.',
-          inline: true,
-        },
-      ],
-    };
-
-    // Send the embed using the sendEmbed function
-    sendEmbed(message, embedOptions);
+  description: 'Send an embed.',
+  async execute(message) {
+    sendEmbed(message, {
+      title: 'Hello!',
+      description: 'This is a message embed.',
+      color: 0x00ff00, // Green color
+    });
   },
 };
-
 ```
 
 ---
