@@ -24,9 +24,10 @@ const { sendEmbed } = require('easy-discord-embeds');
 
 ---
 
-## Example Usage:
+## 🧑‍💻 Example Usage for Slash Commands
+Here’s an example of how to use easy-discord-embeds with Slash Commands to send a simple embed in your Discord bot:
 
-## **const { sendEmbed } = require('easy-discord-embeds');
+const { sendEmbed } = require('easy-discord-embeds');
 
 module.exports = {
   data: {
@@ -55,12 +56,8 @@ module.exports = {
     // Send the embed using the sendEmbed function
     sendEmbed(interaction, embedOptions);
   },
-};**##
----
+};
 
----
-## Send Embed Function
-sendEmbed(interaction, embedOptions);
 ---
 
 ## 📝 License
