@@ -1,4 +1,4 @@
-const { EmbedBuilder } = require('discord.js');
+const { EmbedBuilder, Message } = require('discord.js');  // Import Message class
 
 function sendEmbed(target, embedOptions) {
   // Create embed object
@@ -32,7 +32,7 @@ function sendEmbed(target, embedOptions) {
 
   // Check if the target is a message or interaction and send the embed
   if (target.isCommand) {
-    // Handle interaction (e.g. slash command)
+    // Handle interaction (e.g., slash command)
     target.reply({ embeds: [embed] });
   } else if (target instanceof Message) {
     // Handle message object
@@ -43,3 +43,4 @@ function sendEmbed(target, embedOptions) {
 }
 
 module.exports = { sendEmbed };
+
